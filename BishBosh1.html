@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BishBosh 1</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let stringBuffer = '';
+    let onFirst = true;
+    for (let i =1 ; i <= 100; i++)
+    {
+        if(onFirst)
+            onFirst = false;
+        else
+            stringBuffer += ', ';
+        let useNumber = true;
+        let bish = false;
+        if(i%3 == 0)
+        {
+            useNumber = false;
+            bish = true;
+            stringBuffer += 'Bish';
+        }
+        if(i%4 == 0)
+        {
+            useNumber = false;
+            if (bish)
+                stringBuffer += '-';
+            stringBuffer += 'Bosh';
+        }
+        if(useNumber)
+        {
+            stringBuffer += i;
+        }
+    }
+    console.log(stringBuffer);
+</script>
+</html>
