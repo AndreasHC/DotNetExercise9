@@ -1,3 +1,12 @@
 body{
     background-color: antiquewhite;
 }
+
+.active-list-entry{
+    background-color: beige;
+}
+
+.inactive-list-entry{
+    background-color:darkgrey;
+    text-decoration: line-through;
+}
